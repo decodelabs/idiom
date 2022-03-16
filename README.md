@@ -36,9 +36,15 @@ $content = <<<CONTENT
 Idiom allows you to write naturally, converting paragraphs, lines and spaces to the relevant HTML elements.
 
 You can include <strong>tags</strong> where necessary.
+
+<ul>
+    <li>Block elements like this can be used if extended mode is enabled</li>
+    <li>Alternatively, content can be rendered as inline HTML with inline mode</li>
+</ul>
 CONTENT;
 
 $parser = new Parser();
+$parser->setExtended(true);
 echo $parser->parse($content);
 ```
 
@@ -49,16 +55,17 @@ Idiom also provides a [Metamorph](https://github.com/decodelabs/metamorph/) Hand
 ```php
 use DecodeLabs\Metamorph;
 
-echo Metamorph::idiom($myTweet);
-
-// Also aliased in Metamorph as "SimpleTags"
-echo Metamorph::simpleTags($myTweet);
+echo Metamorph::{'idiom.extended'}($content);
 ```
 
 ## Output
 
-The parsed HTML provided by Idiom is now wrapped in a <code>Markup</code> interface from the [Tagged](https://github.com/decodelabs/tagged/) library such that output is handled correctly in all rendering contexts.
+The parsed HTML provided by Idiom is wrapped in a <code>Markup</code> interface from the [Tagged](https://github.com/decodelabs/tagged/) library such that output is handled correctly in all rendering contexts.
 
+
+### Safety
+
+Please note, Idiom does not yet exhaustively treat input for malicious entities - this parser should only be used with content considered _safe_.
 
 
 ## Licensing

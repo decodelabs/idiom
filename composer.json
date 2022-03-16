@@ -11,6 +11,7 @@
     "require": {
         "php": "^7.2|^8.0",
 
+        "decodelabs/coercion": "^0.1",
         "decodelabs/tagged": "^0.13"
     },
     "require-dev": {
