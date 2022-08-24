@@ -14,6 +14,7 @@ use DecodeLabs\Idiom\Parser;
 use DecodeLabs\Metamorph\MacroHandler;
 use DecodeLabs\Metamorph\MacroHandlerTrait;
 use DecodeLabs\Tagged\Buffer;
+use Stringable;
 
 class Idiom implements MacroHandler
 {
@@ -29,16 +30,8 @@ class Idiom implements MacroHandler
         ]
     ];
 
-
-    /**
-     * @var bool
-     */
-    protected $inline = false;
-
-    /**
-     * @var bool
-     */
-    protected $extended = false;
+    protected bool $inline = false;
+    protected bool $extended = false;
 
 
     /**
@@ -60,7 +53,7 @@ class Idiom implements MacroHandler
     public function convert(
         string $content,
         ?callable $setup = null
-    ) {
+    ): string|Stringable|null {
         $parser = new Parser();
         $parser->setInline($this->inline);
         $parser->setExtended($this->extended);
