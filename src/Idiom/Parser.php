@@ -34,15 +34,8 @@ class Parser
         'table', 'thead', 'tbody', 'tr'
     ];
 
-    /**
-     * @var bool
-     */
-    protected $inline = false;
-
-    /**
-     * @var bool
-     */
-    protected $extended = false;
+    protected bool $inline = false;
+    protected bool $extended = false;
 
 
     /**
@@ -50,7 +43,7 @@ class Parser
      *
      * @return $this
      */
-    public function setInline(bool $inline): Parser
+    public function setInline(bool $inline): static
     {
         $this->inline = $inline;
         return $this;
@@ -69,7 +62,7 @@ class Parser
      *
      * @return $this
      */
-    public function setExtended(bool $extended): Parser
+    public function setExtended(bool $extended): static
     {
         $this->extended = $extended;
         return $this;
