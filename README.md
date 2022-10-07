@@ -7,7 +7,13 @@
 [![PHPStan](https://img.shields.io/badge/PHPStan-enabled-44CC11.svg?longCache=true&style=flat)](https://github.com/phpstan/phpstan)
 [![License](https://img.shields.io/packagist/l/decodelabs/idiom?style=flat)](https://packagist.org/packages/decodelabs/idiom)
 
-Lightweight text to HTML parser - tags optional
+### Lightweight text to HTML parser - tags optional
+
+Idiom provides a simple and easy to use text parser that can convert natural language with an optional subset of HTML tags to full markup ready for consumption.
+
+_Get news and updates on the [DecodeLabs blog](https://blog.decodelabs.com)._
+
+---
 
 
 ## Installation
