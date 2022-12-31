@@ -3,7 +3,7 @@
 [![PHP from Packagist](https://img.shields.io/packagist/php-v/decodelabs/idiom?style=flat)](https://packagist.org/packages/decodelabs/idiom)
 [![Latest Version](https://img.shields.io/packagist/v/decodelabs/idiom.svg?style=flat)](https://packagist.org/packages/decodelabs/idiom)
 [![Total Downloads](https://img.shields.io/packagist/dt/decodelabs/idiom.svg?style=flat)](https://packagist.org/packages/decodelabs/idiom)
-[![GitHub Workflow Status](https://img.shields.io/github/workflow/status/decodelabs/idiom/Integrate)](https://github.com/decodelabs/idiom/actions/workflows/integrate.yml)
+[![GitHub Workflow Status](https://img.shields.io/github/actions/workflow/status/decodelabs/idiom/integrate.yml?branch=develop)](https://github.com/decodelabs/idiom/actions/workflows/integrate.yml)
 [![PHPStan](https://img.shields.io/badge/PHPStan-enabled-44CC11.svg?longCache=true&style=flat)](https://github.com/phpstan/phpstan)
 [![License](https://img.shields.io/packagist/l/decodelabs/idiom?style=flat)](https://packagist.org/packages/decodelabs/idiom)
 
