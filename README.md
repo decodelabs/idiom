@@ -3,11 +3,17 @@
 [![PHP from Packagist](https://img.shields.io/packagist/php-v/decodelabs/idiom?style=flat)](https://packagist.org/packages/decodelabs/idiom)
 [![Latest Version](https://img.shields.io/packagist/v/decodelabs/idiom.svg?style=flat)](https://packagist.org/packages/decodelabs/idiom)
 [![Total Downloads](https://img.shields.io/packagist/dt/decodelabs/idiom.svg?style=flat)](https://packagist.org/packages/decodelabs/idiom)
-[![GitHub Workflow Status](https://img.shields.io/github/workflow/status/decodelabs/idiom/PHP%20Composer)](https://github.com/decodelabs/idiom/actions/workflows/php.yml)
+[![GitHub Workflow Status](https://img.shields.io/github/actions/workflow/status/decodelabs/idiom/integrate.yml?branch=develop)](https://github.com/decodelabs/idiom/actions/workflows/integrate.yml)
 [![PHPStan](https://img.shields.io/badge/PHPStan-enabled-44CC11.svg?longCache=true&style=flat)](https://github.com/phpstan/phpstan)
 [![License](https://img.shields.io/packagist/l/decodelabs/idiom?style=flat)](https://packagist.org/packages/decodelabs/idiom)
 
-Lightweight text to HTML parser - tags optional
+### Lightweight text to HTML parser - tags optional
+
+Idiom provides a simple and easy to use text parser that can convert natural language with an optional subset of HTML tags to full markup ready for consumption.
+
+_Get news and updates on the [DecodeLabs blog](https://blog.decodelabs.com)._
+
+---
 
 
 ## Installation
