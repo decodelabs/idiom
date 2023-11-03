@@ -39,8 +39,9 @@ class Idiom implements MacroHandler
      *
      * @param array<string, mixed> $options
      */
-    public function __construct(array $options)
-    {
+    public function __construct(
+        array $options
+    ) {
         $this->inline = Coercion::toBool($options['inline'] ?? $this->inline);
         $this->extended = Coercion::toBool($options['extended'] ?? $this->extended);
         $this->resolveUrls = Coercion::toBool($options['resolveUrls'] ?? $this->resolveUrls);
