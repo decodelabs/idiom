@@ -1,7 +1,7 @@
 <?php
 
 /**
- * @package Chirp
+ * @package Idiom
  * @license http://opensource.org/licenses/MIT
  */
 
