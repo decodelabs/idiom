@@ -1,7 +1,7 @@
 <?php
 
 /**
- * @package Chirp
+ * @package Idiom
  * @license http://opensource.org/licenses/MIT
  */
 
@@ -43,8 +43,9 @@ class Parser
      *
      * @return $this
      */
-    public function setInline(bool $inline): static
-    {
+    public function setInline(
+        bool $inline
+    ): static {
         $this->inline = $inline;
         return $this;
     }
@@ -62,8 +63,9 @@ class Parser
      *
      * @return $this
      */
-    public function setExtended(bool $extended): static
-    {
+    public function setExtended(
+        bool $extended
+    ): static {
         $this->extended = $extended;
         return $this;
     }
@@ -80,8 +82,9 @@ class Parser
     /**
      * Convert text to HTML
      */
-    public function parse(?string $content): ?Markup
-    {
+    public function parse(
+        ?string $content
+    ): ?Markup {
         if (null === ($content = $this->prepareContent($content))) {
             return null;
         }
@@ -98,8 +101,9 @@ class Parser
     /**
      * Prepare content ready for conversion
      */
-    protected function prepareContent(?string $content): ?string
-    {
+    protected function prepareContent(
+        ?string $content
+    ): ?string {
         if ($content === null) {
             return null;
         }
@@ -139,16 +143,18 @@ class Parser
     /**
      * Parse as inline content
      */
-    protected function parseInline(string $content): string
-    {
+    protected function parseInline(
+        string $content
+    ): string {
         return str_replace("\n", '<br />' . "\n", $content);
     }
 
     /**
      * Parse as block content
      */
-    protected function parseBlock(string $content): string
-    {
+    protected function parseBlock(
+        string $content
+    ): string {
         $content = rtrim($content) . "\n";
         $preTags = [];
 
