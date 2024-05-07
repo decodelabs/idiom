@@ -12,7 +12,7 @@
         "php": "^8.1",
 
         "decodelabs/coercion": "^0.2",
-        "decodelabs/tagged": "^0.14"
+        "decodelabs/tagged": "^0.15"
     },
     "require-dev": {
         "decodelabs/metamorph": "^0.5",
