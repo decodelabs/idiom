@@ -1,3 +1,4 @@
+## v0.2.4 (2024-08-21)
 * Converted consts to PascalCase
 * Updated Metamorph dependency
 
