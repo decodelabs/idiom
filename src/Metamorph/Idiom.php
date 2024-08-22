@@ -21,7 +21,7 @@ class Idiom implements MacroHandler
     use MacroHandlerTrait;
     use HtmlTrait;
 
-    public const MACROS = [
+    protected const Macros = [
         'extended' => [
             'extended' => true
         ],

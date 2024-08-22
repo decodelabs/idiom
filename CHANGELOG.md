@@ -1,3 +1,6 @@
+* Converted consts to PascalCase
+* Updated Metamorph dependency
+
 ## v0.2.3 (2024-05-07)
 * Made PHP8.1 minimum version
 * Updated Tagged dependency
