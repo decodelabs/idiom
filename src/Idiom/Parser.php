@@ -14,13 +14,13 @@ use DecodeLabs\Tagged\Markup;
 
 class Parser
 {
-    public const TAGS = [
+    protected const Tags = [
         'a', 'abbr', 'b', 'br', 'cite', 'code', 'del', 'em',
         'i', 'img', 'ins', 'q', 'small', 'span', 'strong',
         'sub', 'sup', 'time', 'u', 'var'
     ];
 
-    public const EXTENDED_TAGS = [
+    protected const ExtendedTags = [
         'h1', 'h2', 'h3', 'h4', 'h5', 'h6',
         'ul', 'ol', 'li',
         'table', 'thead', 'tbody', 'tr', 'th', 'td',
@@ -29,7 +29,7 @@ class Parser
         'address', 'figure', 'figcaption'
     ];
 
-    public const CONTAINER_TAGS = [
+    protected const ContainerTags = [
         'ul', 'ol',
         'table', 'thead', 'tbody', 'tr'
     ];
@@ -117,12 +117,12 @@ class Parser
         $tags = [];
         $extended = $this->extended && !$this->inline;
 
-        foreach (self::TAGS as $tag) {
+        foreach (self::Tags as $tag) {
             $tags[] = '<' . $tag . '>';
         }
 
         if ($extended) {
-            foreach (self::EXTENDED_TAGS as $tag) {
+            foreach (self::ExtendedTags as $tag) {
                 $tags[] = '<' . $tag . '>';
             }
         }
@@ -183,12 +183,12 @@ class Parser
         }
 
         if ($this->extended) {
-            $blockReg = '(?:' . implode('|', self::EXTENDED_TAGS) . ')';
+            $blockReg = '(?:' . implode('|', self::ExtendedTags) . ')';
         } else {
             $blockReg = '(?:p)';
         }
 
-        $containerReg = '(?:' . implode('|', self::CONTAINER_TAGS) . ')';
+        $containerReg = '(?:' . implode('|', self::ContainerTags) . ')';
 
         // Double <br>s
         $content = preg_replace('|<br\s*/?>\s*<br\s*/?>|', "\n\n", $content) ?? $content;
