@@ -14,13 +14,19 @@ use DecodeLabs\Tagged\Markup;
 
 class Parser
 {
-    protected const Tags = [
+    /**
+     * @var list<string>
+     */
+    protected const array Tags = [
         'a', 'abbr', 'b', 'br', 'cite', 'code', 'del', 'em',
         'i', 'img', 'ins', 'q', 'small', 'span', 'strong',
         'sub', 'sup', 'time', 'u', 'var'
     ];
 
-    protected const ExtendedTags = [
+    /**
+     * @var list<string>
+     */
+    protected const array ExtendedTags = [
         'h1', 'h2', 'h3', 'h4', 'h5', 'h6',
         'ul', 'ol', 'li',
         'table', 'thead', 'tbody', 'tr', 'th', 'td',
@@ -29,7 +35,10 @@ class Parser
         'address', 'figure', 'figcaption'
     ];
 
-    protected const ContainerTags = [
+    /**
+     * @var list<string>
+     */
+    protected const array ContainerTags = [
         'ul', 'ol',
         'table', 'thead', 'tbody', 'tr'
     ];
@@ -115,7 +124,9 @@ class Parser
         }
 
         $tags = [];
-        $extended = $this->extended && !$this->inline;
+        $extended =
+            $this->extended &&
+            !$this->inline;
 
         foreach (self::Tags as $tag) {
             $tags[] = '<' . $tag . '>';
