@@ -21,7 +21,7 @@ class Idiom implements MacroHandler
     use MacroHandlerTrait;
     use HtmlTrait;
 
-    protected const Macros = [
+    public const array Macros = [
         'extended' => [
             'extended' => true
         ],
@@ -37,7 +37,7 @@ class Idiom implements MacroHandler
     /**
      * Set options
      *
-     * @param array<string, mixed> $options
+     * @param array<string,mixed> $options
      */
     public function __construct(
         array $options
