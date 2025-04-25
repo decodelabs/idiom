@@ -11,8 +11,6 @@
 
 Idiom provides a simple and easy to use text parser that can convert natural language with an optional subset of HTML tags to full markup ready for consumption.
 
-_Get news and updates on the [DecodeLabs blog](https://blog.decodelabs.com)._
-
 ---
 
 
