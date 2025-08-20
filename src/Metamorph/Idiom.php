@@ -35,8 +35,6 @@ class Idiom implements MacroHandler
 
 
     /**
-     * Set options
-     *
      * @param array<string,mixed> $options
      */
     public function __construct(
@@ -48,9 +46,6 @@ class Idiom implements MacroHandler
     }
 
 
-    /**
-     * Convert markdown to HTML
-     */
     public function convert(
         string $content,
         ?callable $setup = null

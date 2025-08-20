@@ -48,8 +48,6 @@ class Parser
 
 
     /**
-     * Set inline
-     *
      * @return $this
      */
     public function setInline(
@@ -59,17 +57,12 @@ class Parser
         return $this;
     }
 
-    /**
-     * Is inline
-     */
     public function isInline(): bool
     {
         return $this->inline;
     }
 
     /**
-     * Set extended
-     *
      * @return $this
      */
     public function setExtended(
@@ -79,18 +72,12 @@ class Parser
         return $this;
     }
 
-    /**
-     * Is extended
-     */
     public function isExtended(): bool
     {
         return $this->extended;
     }
 
 
-    /**
-     * Convert text to HTML
-     */
     public function parse(
         ?string $content
     ): ?Markup {
@@ -107,9 +94,6 @@ class Parser
         return new Buffer($output);
     }
 
-    /**
-     * Prepare content ready for conversion
-     */
     protected function prepareContent(
         ?string $content
     ): ?string {
@@ -151,18 +135,12 @@ class Parser
     }
 
 
-    /**
-     * Parse as inline content
-     */
     protected function parseInline(
         string $content
     ): string {
         return str_replace("\n", '<br />' . "\n", $content);
     }
 
-    /**
-     * Parse as block content
-     */
     protected function parseBlock(
         string $content
     ): string {
