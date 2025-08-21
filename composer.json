@@ -11,12 +11,15 @@
     "require": {
         "php": "^8.4",
 
-        "decodelabs/coercion": "^0.3",
-        "decodelabs/tagged": "^0.20"
+        "decodelabs/coercion": "^0.3.5",
+        "decodelabs/tagged": "^0.21"
     },
     "require-dev": {
-        "decodelabs/metamorph": "^0.7",
+        "decodelabs/metamorph": "^0.8",
         "decodelabs/phpstan-decodelabs": "^0.7"
+    },
+    "conflict": {
+        "decodelabs/metamorph": "<0.8"
     },
     "autoload": {
         "psr-4": {
