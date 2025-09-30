@@ -16,7 +16,9 @@ Idiom provides a simple and easy to use text parser that can convert natural lan
 
 ## Installation
 
-Install the library via composer:
+This package requires PHP 8.4 or higher.
+
+Install via Composer:
 
 ```bash
 composer require decodelabs/idiom
