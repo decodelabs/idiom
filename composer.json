@@ -2,12 +2,18 @@
     "name": "decodelabs/idiom",
     "description": "Lightwight text to HTML parser",
     "type": "library",
-    "keywords": [ "tags", "markup", "html" ],
+    "keywords": [
+        "tags",
+        "markup",
+        "html"
+    ],
     "license": "MIT",
-    "authors": [ {
+    "authors": [
+        {
             "name": "Tom Wright",
             "email": "tom@inflatablecookie.com"
-        } ],
+        }
+    ],
     "require": {
         "php": "^8.4",
 
@@ -15,6 +21,7 @@
         "decodelabs/tagged": "^0.21"
     },
     "require-dev": {
+        "decodelabs/chorus": "^0.1",
         "decodelabs/metamorph": "^0.8",
         "decodelabs/phpstan-decodelabs": "^0.7"
     },
